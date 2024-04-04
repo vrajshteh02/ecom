@@ -4,16 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Cart from './components/Cart';
 import { useState } from 'react';
-// import { PRODUCTS } from './components/Products'
 
-
-// const getCart = () => {
-//   let cartcount = [];
-//   for (let i = 0; i < PRODUCTS.length + 1; i++) {
-//     cartcount[i] = 0;
-//   }
-//   return cartcount;
-// }
 
 function App() {
 
@@ -39,24 +30,17 @@ function App() {
     }
   };
 
-  // const updateQuantity = (itemId, change) => {
-  //   setCart((prevCart) =>
-  //     prevCart.map((item) =>
-  //       item.id === itemId ? { ...item, quantity: item.quantity + change } : item
-  //     )
-  //   );
-  // };
 
   const updateQuantity = (itemId, change) => {
     setCart((prevCart) =>
       prevCart.map((item) => {
         const updatedQuantity = item.id === itemId ? item.quantity + change : item.quantity;
         if (updatedQuantity <= 0) {
-          return null; // Remove the item if quantity reaches 0
+          return null;
         } else {
-          return { ...item, quantity: updatedQuantity }; // Update quantity otherwise
+          return { ...item, quantity: updatedQuantity };
         }
-      }).filter(Boolean) // Remove any null values (filtered items)
+      }).filter(Boolean)
     );
   };
 
