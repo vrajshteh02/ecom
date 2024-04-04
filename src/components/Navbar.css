@@ -1,0 +1,174 @@
+.list {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #131921;
+  min-width: 1000px;
+}
+
+.navbar {
+  display: flex;
+  color: white;
+  height: 60px;
+  margin: 0;
+  align-items: center;
+  padding: 0px 10px;
+  text-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.font1 {
+  font-size: 12px;
+  color: #cccccc;
+}
+
+.font2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.font3 {
+  font-size: 17px;
+  padding-bottom: 5px;
+}
+
+.cur {
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.bor {
+  border: 1px solid #131921;
+}
+
+.bor:hover {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.amzlogo {
+  height: 40px;
+}
+
+.loc {
+  display: flex;
+  height: 40px;
+}
+
+.iconloc {
+  margin: 8px 3px 0px 0px;
+}
+
+.location {
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.searchbar {
+  height: 40px;
+  display: inline;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+form {
+  height: 40px;
+  display: flex;
+}
+
+.lens {
+  height: 40px;
+  width: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: hidden;
+  cursor: pointer;
+}
+
+.lens img {
+  height: 20px;
+}
+
+select {
+  height: 40px;
+  width: 50px;
+  border: 0px;
+  border-radius: 5px 0px 0px 5px;
+  cursor: pointer;
+  outline: none;
+  background-color: #e6e6e6;
+}
+
+.serbar {
+  height: 40px;
+  font-size: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 0px;
+  outline: 0;
+}
+
+.searchbtn {
+
+  width: 50px;
+  background-size: 20px;
+  background-color: #febd69;
+  border: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 10px;
+  margin: 5px;
+}
+
+.language .flag {
+  margin: 1px;
+  height: 20px;
+}
+
+.hello,
+.orders {
+  padding: 10px;
+}
+
+.cart {
+  padding: 10px;
+  display: flex;
+}
+
+.cart i {
+  font-size: 30px;
+}
+
+.cart span {
+  font-size: 25px;
+}
+
+/* .cart p {
+  padding-top: 13px;
+} */
