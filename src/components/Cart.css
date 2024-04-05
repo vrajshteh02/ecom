@@ -1,6 +1,6 @@
 .empty {
-  text-align: center;
-  width: 100vw;
+  margin-left: 50px;
+  width: 100%;
   margin-top: 20px;
   font-size: 30px;
 }
@@ -15,18 +15,30 @@
   font-size: 17px;
 }
 
+.btn:hover {
+  background-color: #FFA41C;
+}
+
+.cart-container {
+  height: 100vh;
+}
 
 .cartproduct {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
   height: 300px;
 }
 
 .footer {
   position: fixed;
+  background-color: #ffd814;
+  width: 100%;
   bottom: 0;
-  margin-left: 40px;
   height: 50px;
+  align-content: center;
+}
 
-
+.footer p {
+  margin-left: 40px;
+  font-weight: 700;
 }
