@@ -12,8 +12,8 @@ const Cards = (props) => {
           alt=""
           className="product-image"
         />
-        <span >{name}</span>
-        <span >{amt}</span>
+        <span className='text'>{name}</span>
+        <span className='text'>{amt}Rs.</span>
         {/* <button className='btn btn-danger'>Add</button> */}
         <button className="button" key={id} onClick={() => addToCart(props.data)}>Add</button>
       </div>

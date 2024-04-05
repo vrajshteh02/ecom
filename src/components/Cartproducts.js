@@ -10,8 +10,8 @@ const Cartproducts = ({ updateQuantity, removeFromCart, cart }) => {
             <div key={item.id} className="list-group-item">
               <div className="product-details">
                 <img src={item.img} alt="" className="product-image" />
-                <p>{item.name}</p>
-                <p>{item.amt}</p>
+                <p className='text'>{item.name}</p>
+                <p className='text'>{item.amt}Rs.</p>
                 <div className="quantity-controls">
                   <button
                     className='btn'
